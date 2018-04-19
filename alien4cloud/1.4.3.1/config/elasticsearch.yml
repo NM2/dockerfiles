@@ -1,0 +1,16 @@
+index:
+  number_of_shards: 1
+  number_of_replicas: 0
+path:
+  data: /opt/alien4cloud-data/elasticsearch/data
+  work: /opt/alien4cloud-data/elasticsearch/work
+  logs: /opt/alien4cloud-data/elasticsearch/logs
+ # conf: /opt/alien4cloud-data/elasticsearch/conf
+
+gateway:
+  recover_after_nodes: 1
+  expected_nodes: 1
+
+discovery.zen.ping.multicast.enabled: false
+discovery.zen.ping.unicast.enabled: true
+discovery.zen.ping.unicast.hosts: localhost
